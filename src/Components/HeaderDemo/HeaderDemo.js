@@ -43,14 +43,13 @@ const HeaderDemo = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           <NavLink
             className={({ isActive, isPending }) => {
-              console.log(isActive);
               return isActive ? 'text-red-500' : '';
             }}
             to={'/'}
           >
             Trang chủ
           </NavLink>
-          <NavLink to={'/'}>Cụm rạp</NavLink>
+          <NavLink to={'/cum-rap'}>Cụm rạp</NavLink>
           <NavLink to={'/'}>Tin tức</NavLink>
           <NavLink
             className={({ isActive, isPending }) => {
